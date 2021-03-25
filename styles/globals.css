@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'ttramillas-extralightregular';
+    src: url('/fonts/ttramillas-extralight.woff2') format('woff2'),
+         url('/fonts/ttramillas-extralight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ttramillas-extralightitalicRg';
+    src: url('/fonts/ttramillas-extralightitalic.woff2') format('woff2'),
+         url('/fonts/ttramillas-extralightitalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sweet_sans_promedium';
+    src: url('/fonts/sweetsanspromedium.woff2') format('woff2'),
+         url('/fonts/sweetsanspromedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@layer base {
+    ::-moz-selection {
+        @apply text-black bg-white;
+    }
+
+    ::selection {
+        @apply text-black bg-white;
+    }
+}
