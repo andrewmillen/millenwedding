@@ -95,7 +95,7 @@ export default function MainNav() {
                                 <Link href="/" passHref>
                                     <a
                                         ref={firstLink}
-                                        className="text-white py-3 px-2 inline-block font-serifitalic sm:text-2xl md:text-3xl lg:text-5xl hover:text-wineLight transform hover:translate-x-1 transition ease-in-out"
+                                        className="text-white py-3 px-2 inline-block font-serifitalic sm:text-2xl md:text-3xl lg:text-5xl xl:text-7xl 2xl:text-8xl hover:text-wineLight transform hover:translate-x-1 transition ease-in-out"
                                         // onClick={() => setIsOpen(false)}
                                     >
                                         Home
@@ -104,35 +104,35 @@ export default function MainNav() {
                             </li>
                             <li>
                                 <Link href="/our-story">
-                                    <a className="text-white py-3 px-2 inline-block font-serifitalic sm:text-2xl md:text-3xl lg:text-5xl hover:text-wineLight transform hover:translate-x-1 hover:tracking-wider transition ease-in-out">
+                                    <a className="text-white py-3 px-2 inline-block font-serifitalic sm:text-2xl md:text-3xl lg:text-5xl xl:text-7xl 2xl:text-8xl hover:text-wineLight transform hover:translate-x-1 hover:tracking-wider transition ease-in-out">
                                         Our Story
                                     </a>
                                 </Link>
                             </li>
                             <li>
                                 <Link href="/wedding-party">
-                                    <a className="text-white py-3 px-2 inline-block font-serifitalic sm:text-2xl md:text-3xl lg:text-5xl hover:text-wineLight transform hover:translate-x-1 hover:tracking-wider transition ease-in-out">
+                                    <a className="text-white py-3 px-2 inline-block font-serifitalic sm:text-2xl md:text-3xl lg:text-5xl xl:text-7xl 2xl:text-8xl hover:text-wineLight transform hover:translate-x-1 hover:tracking-wider transition ease-in-out">
                                         The Wedding Party
                                     </a>
                                 </Link>
                             </li>
                             <li>
                                 <Link href="/plan-your-visit">
-                                    <a className="text-white py-3 px-2 inline-block font-serifitalic sm:text-2xl md:text-3xl lg:text-5xl hover:text-wineLight transform hover:translate-x-1 hover:tracking-wider transition ease-in-out">
+                                    <a className="text-white py-3 px-2 inline-block font-serifitalic sm:text-2xl md:text-3xl lg:text-5xl xl:text-7xl 2xl:text-8xl hover:text-wineLight transform hover:translate-x-1 hover:tracking-wider transition ease-in-out">
                                         Plan Your Visit
                                     </a>
                                 </Link>
                             </li>
                             <li>
                                 <Link href="/the-day-of">
-                                    <a className="text-white py-3 px-2 inline-block font-serifitalic sm:text-2xl md:text-3xl lg:text-5xl hover:text-wineLight transform hover:translate-x-1 transition ease-in-out">
+                                    <a className="text-white py-3 px-2 inline-block font-serifitalic sm:text-2xl md:text-3xl lg:text-5xl xl:text-7xl 2xl:text-8xl hover:text-wineLight transform hover:translate-x-1 transition ease-in-out">
                                         The Day Of
                                     </a>
                                 </Link>
                             </li>
                             <li>
                                 <Link href="/registry">
-                                    <a className="text-white py-3 px-2 inline-block font-serifitalic sm:text-2xl md:text-3xl lg:text-5xl hover:text-wineLight transform hover:translate-x-1 hover:tracking-wider transition ease-in-out">
+                                    <a className="text-white py-3 px-2 inline-block font-serifitalic sm:text-2xl md:text-3xl lg:text-5xl xl:text-7xl 2xl:text-8xl hover:text-wineLight transform hover:translate-x-1 hover:tracking-wider transition ease-in-out">
                                         Registry
                                     </a>
                                 </Link>

@@ -4,7 +4,7 @@ export default function RSVPButton() {
             <div className="absolute top-0 left-0 h-full w-full tracking-widest text-xl text-white flex items-center justify-center">
                 RSVP
             </div>
-            <div className="absolute top-0 left-0 h-full w-full rounded-full border border-marigold"></div>
+            <div className="absolute top-0 left-0 h-full w-full rounded-full border-2 border-marigold"></div>
         </a>
     )
 }

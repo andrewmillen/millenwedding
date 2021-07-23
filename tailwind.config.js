@@ -19,6 +19,9 @@ module.exports = {
             widest: '.5em',
         },
         extend: {
+            fontSize: {
+                '10xl': '10rem',
+            },
             colors: {
                 wine: '#66191D',
                 wineLight: '#D76369',
@@ -35,5 +38,5 @@ module.exports = {
             padding: ['hover', 'focus'],
         },
     },
-    plugins: [],
+    plugins: [require('@tailwindcss/typography')],
 }
