@@ -39,9 +39,9 @@
         @apply bg-linenDark;
     }
 
-    body, body a {
+    /* body, body a {
         cursor: none;
-    }
+    } */
 
     h1 {
         @apply font-serif text-6xl lg:text-8xl;
