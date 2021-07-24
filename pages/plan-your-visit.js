@@ -13,6 +13,10 @@ export default function ourStory() {
                     content="We're getting married on October 23, 2021 at Pinecrest Retreat in
             Mowcow, TN."
                 />
+                <meta
+                    property="og:image"
+                    content="https://www.millenwedding.com/og-image.jpg"
+                />
             </Head>
             <PageHeader title="Plan Your Visit" />
             <div className="p-8 md:p-16">

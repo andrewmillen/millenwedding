@@ -11,6 +11,10 @@ export default function theDayOf() {
                     content="We're getting married on October 23, 2021 at Pinecrest Retreat in
             Mowcow, TN."
                 />
+                <meta
+                    property="og:image"
+                    content="https://www.millenwedding.com/og-image.jpg"
+                />
             </Head>
             <PageHeader title="The Day Of" />
             <div className="p-8 md:p-16">
