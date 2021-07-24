@@ -28,15 +28,7 @@ export default function Home() {
 
             <div className="w-screen h-screen flex flex-col md:flex-row">
                 <div className="w-screen h-1/2 flex-shrink-0 md:h-screen md:w-1/2 bg-wine text-white flex flex-col justify-between p-8 md:p-16">
-                    <div className="flex items-center justify-between">
-                        <MainNav />
-                        <a
-                            href="#"
-                            className="text-marigold uppercase lg:text-lg tracking-widest lg:hidden"
-                        >
-                            RSVP
-                        </a>
-                    </div>
+                    <MainNav />
 
                     <div className="flex flex-col-reverse md:flex-col">
                         <p className="text-wineLight tracking-widest lg:text-xl xl:text-2xl">

@@ -1,0 +1,34 @@
+{
+    "navLinks": [
+        {
+          "path": "/",
+          "title": "Home",
+          "external": false
+        },
+        {
+          "path": "/our-story",
+          "title": "Our Story",
+          "external": false
+        },
+        {
+          "path": "/the-wedding-party",
+          "title": "The Wedding Party",
+          "external": false
+        },
+        {
+          "path": "/plan-your-visit",
+          "title": "Plan Your Visit",
+          "external": false
+        },
+        {
+          "path": "/the-day-of",
+          "title": "The Day Of",
+          "external": false
+        },
+        {
+          "path": "http://www.google.com",
+          "title": "Registry",
+          "external": true
+        }
+    ]
+  }

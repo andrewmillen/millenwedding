@@ -1,11 +1,20 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
+import { navLinks } from '@/lib/navLinks.json'
 
 export default function MainNav() {
     const [isOpen, setIsOpen] = useState(false)
     const toggleButton = useRef(null)
     const menuWrapper = useRef(null)
-    const firstLink = useRef(null)
+    const router = useRouter()
+
+    function isActivePage(item) {
+        if (router.pathname.indexOf(item.path) > 0) {
+            return true
+        }
+        return false
+    }
 
     // Close the menu if esc key is pressed
     const closeMenu = useCallback(e => {
@@ -25,7 +34,7 @@ export default function MainNav() {
     // Focus on the first item when the menu opens
     useEffect(() => {
         if (isOpen) {
-            firstLink.current.focus()
+            // navLinks[0].focus()
             document.body.classList.add('overflow-hidden')
         } else {
             document.body.classList.remove('overflow-hidden')
@@ -91,52 +100,41 @@ export default function MainNav() {
                 <div className="fixed flex flex-col justify-end max-h-screen top-0 left-0 bottom-0 right-0 transition duration-150 ease-out transform bg-wine p-6 sm:p-8 lg:p-12 z-40">
                     <nav className="block">
                         <ul className="flex flex-col space-y-4">
-                            <li>
-                                <Link href="/" passHref>
-                                    <a
-                                        ref={firstLink}
-                                        className="text-white py-3 px-2 inline-block font-serifitalic sm:text-2xl md:text-3xl lg:text-5xl xl:text-7xl 2xl:text-8xl hover:text-wineLight transform hover:translate-x-1 transition ease-in-out"
-                                        // onClick={() => setIsOpen(false)}
-                                    >
-                                        Home
-                                    </a>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/our-story">
-                                    <a className="text-white py-3 px-2 inline-block font-serifitalic sm:text-2xl md:text-3xl lg:text-5xl xl:text-7xl 2xl:text-8xl hover:text-wineLight transform hover:translate-x-1 hover:tracking-wider transition ease-in-out">
-                                        Our Story
-                                    </a>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/wedding-party">
-                                    <a className="text-white py-3 px-2 inline-block font-serifitalic sm:text-2xl md:text-3xl lg:text-5xl xl:text-7xl 2xl:text-8xl hover:text-wineLight transform hover:translate-x-1 hover:tracking-wider transition ease-in-out">
-                                        The Wedding Party
-                                    </a>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/plan-your-visit">
-                                    <a className="text-white py-3 px-2 inline-block font-serifitalic sm:text-2xl md:text-3xl lg:text-5xl xl:text-7xl 2xl:text-8xl hover:text-wineLight transform hover:translate-x-1 hover:tracking-wider transition ease-in-out">
-                                        Plan Your Visit
-                                    </a>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/the-day-of">
-                                    <a className="text-white py-3 px-2 inline-block font-serifitalic sm:text-2xl md:text-3xl lg:text-5xl xl:text-7xl 2xl:text-8xl hover:text-wineLight transform hover:translate-x-1 transition ease-in-out">
-                                        The Day Of
-                                    </a>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/registry">
-                                    <a className="text-white py-3 px-2 inline-block font-serifitalic sm:text-2xl md:text-3xl lg:text-5xl xl:text-7xl 2xl:text-8xl hover:text-wineLight transform hover:translate-x-1 hover:tracking-wider transition ease-in-out">
-                                        Registry
-                                    </a>
-                                </Link>
-                            </li>
+                            {navLinks.map(item => (
+                                <>
+                                    {item.external ? (
+                                        <li key={item.path}>
+                                            <a
+                                                target="_blank"
+                                                href={item.path}
+                                                className={`font-serifitalic py-3 px-2 inline-block sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl transform hover:translate-x-1 transition ease-in-out ${
+                                                    router.pathname ===
+                                                    item.path
+                                                        ? 'text-marigold pointer-events-none'
+                                                        : 'text-white hover:text-wineLight'
+                                                }`}
+                                            >
+                                                {item.title}
+                                            </a>
+                                        </li>
+                                    ) : (
+                                        <li key={item.path}>
+                                            <Link href={item.path} passHref>
+                                                <a
+                                                    className={`text-white font-serifitalic py-3 px-2 inline-block sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl transform hover:translate-x-1 transition ease-in-out ${
+                                                        router.pathname ===
+                                                        item.path
+                                                            ? 'text-marigold pointer-events-none'
+                                                            : 'text-white hover:text-wineLight'
+                                                    }`}
+                                                >
+                                                    {item.title}
+                                                </a>
+                                            </Link>
+                                        </li>
+                                    )}
+                                </>
+                            ))}
                         </ul>
                     </nav>
                 </div>
