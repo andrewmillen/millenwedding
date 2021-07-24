@@ -35,10 +35,10 @@ export default function Home() {
                     </div>
 
                     <div className="flex flex-col-reverse md:flex-col">
-                        <p className="text-wineLight tracking-widest lg:text-xl">
+                        <p className="text-wineLight tracking-widest lg:text-xl xl:text-2xl">
                             10.23.2021
                         </p>
-                        <h1 className="font-serifitalic text-6xl lg:text-8xl mb-2 lg:mt-4 lg:-ml-3">
+                        <h1 className="font-serifitalic text-6xl lg:text-8xl xl:text-9xl 2xl:text-10xl mb-2 lg:mt-4 lg:-ml-3">
                             Regina <span className="text-wineLight">&amp;</span>
                             <br /> Andrew
                         </h1>

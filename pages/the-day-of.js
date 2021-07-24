@@ -14,7 +14,7 @@ export default function theDayOf() {
             </Head>
             <PageHeader title="The Day Of" />
             <div className="p-8 md:p-16">
-                <div className="max-w-2xl">
+                <div className="max-w-2xl prose xl:prose-xl">
                     <p className="mb-4">
                         Schedule:{' '}
                         <span className="font-sanslight">
