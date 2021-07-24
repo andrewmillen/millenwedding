@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
         <>
             <Component {...pageProps} />
             <RSVPButton />
-            {/* <CustomCursor /> */}
+            <CustomCursor />
         </>
     )
 }

@@ -36,7 +36,7 @@
 
 @layer base {
     body {
-        @apply bg-linenDark;
+        @apply bg-linen;
     }
 
     /* body, body a {
@@ -95,6 +95,65 @@
         filter: blur(20px);
         transform: scale(1.5);
         animation: blurIn 1.5s ease-out 0.5s forwards;
+    }
+
+    .chatbubble {
+        @apply p-4 rounded-2xl relative flex-1;
+    }
+
+    .chatbubble.left {
+        @apply bg-linenDark ml-12;
+    }
+
+    .chatbubble.left:before {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        bottom: 0.75rem;
+        left: -2rem;
+        height: 2rem;
+        width: 2rem;
+        background: #D4CBC8;
+    }
+
+    .chatbubble.left:after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        bottom: 0.75rem;
+        left: -2rem;
+        width: 2rem;
+        height: 2rem;
+        background: #E9E3E1;
+        border-bottom-right-radius: 100px;
+    }
+
+
+    .chatbubble.right {
+        @apply bg-gradient-to-r from-tinderRed to-tinderOrange text-white;
+    }
+
+    .chatbubble.right:before {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        bottom: 0.75rem;
+        right: -2rem;
+        height: 2rem;
+        width: 2rem;
+        background: #F77B6D;
+    }
+
+    .chatbubble.right:after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        bottom: 0.75rem;
+        right: -2rem;
+        width: 2rem;
+        height: 2rem;
+        background: #E9E3E1;
+        border-bottom-left-radius: 100px;
     }
 
     @keyframes blurIn {
