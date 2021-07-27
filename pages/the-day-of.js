@@ -18,27 +18,27 @@ export default function theDayOf() {
             </Head>
             <PageHeader title="The Day Of" />
             <div className="p-8 md:p-16">
-                <div className="max-w-2xl prose xl:prose-xl">
-                    <p className="mb-4">
+                <div className="container">
+                    <p className="mb-4 lg:text-xl max-w-6xl">
                         Schedule:{' '}
                         <span className="font-sanslight">
                             Ceremony begins at 4:00 p.m. Reception to follow.
                         </span>
                     </p>
-                    <p className="mb-4">
+                    <p className="mb-4 lg:text-xl max-w-6xl">
                         Dress:{' '}
                         <span className="font-sanslight">
                             Cocktail attire. (We recommend comfortable shoes for
                             the woodsy area in which the chapel is located.)
                         </span>
                     </p>
-                    <p className="mb-4">
+                    <p className="mb-4 lg:text-xl max-w-6xl">
                         Address:{' '}
                         <span className="font-sanslight">
                             21430 TN-57, Moscow, TN 38057
                         </span>
                     </p>
-                    <p className="mb-4">
+                    <p className="mb-4 lg:text-xl max-w-6xl">
                         Directions:{' '}
                         <span className="font-sanslight">
                             Moscow is located about 40 miles east of Memphis via

@@ -79,7 +79,7 @@ export default function MainNav() {
         <div ref={menuWrapper}>
             <button
                 ref={toggleButton}
-                className="mainNavButton uppercase tracking-widest flex space-x-4 items-center hover:opacity-75 relative z-50"
+                className="mainNavButton uppercase tracking-widest flex space-x-4 items-center hover:opacity-75 z-50 absolute top-12 left-12"
                 onClick={() => setIsOpen(!isOpen)}
             >
                 {!isOpen ? (
@@ -97,8 +97,8 @@ export default function MainNav() {
             </button>
 
             {isOpen ? (
-                <div className="fixed flex flex-col justify-end max-h-screen top-0 left-0 bottom-0 right-0 transition duration-150 ease-out transform bg-wine p-6 sm:p-8 lg:p-12 z-40">
-                    <nav className="block">
+                <div className="fixed flex flex-col justify-start md:justify-end max-h-screen top-0 left-0 bottom-0 right-0 transition duration-150 ease-out transform bg-wine p-6 sm:p-8 lg:p-12 z-40">
+                    <nav className="mt-24 md:mt-0">
                         <ul className="flex flex-col space-y-4">
                             {navLinks.map(item => (
                                 <>
@@ -107,12 +107,7 @@ export default function MainNav() {
                                             <a
                                                 target="_blank"
                                                 href={item.path}
-                                                className={`font-serifitalic py-3 px-2 inline-block sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl transform hover:translate-x-1 transition ease-in-out ${
-                                                    router.pathname ===
-                                                    item.path
-                                                        ? 'text-marigold pointer-events-none'
-                                                        : 'text-white hover:text-wineLight'
-                                                }`}
+                                                className="font-serifitalic py-1 sm:py-3 2xl:py-5 px-2 inline-block text-3xl md:text-5xl lg:text-6xl transform hover:translate-x-1 transition ease-in-out"
                                             >
                                                 {item.title}
                                             </a>
@@ -121,7 +116,7 @@ export default function MainNav() {
                                         <li key={item.path}>
                                             <Link href={item.path} passHref>
                                                 <a
-                                                    className={`text-white font-serifitalic py-3 px-2 inline-block sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl transform hover:translate-x-1 transition ease-in-out ${
+                                                    className={`text-white font-serifitalic py-1 sm:py-3 2xl:py-5 px-2 inline-block text-3xl md:text-5xl lg:text-6xl transform hover:translate-x-1 transition ease-in-out ${
                                                         router.pathname ===
                                                         item.path
                                                             ? 'text-marigold pointer-events-none'

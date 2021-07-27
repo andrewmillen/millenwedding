@@ -19,8 +19,8 @@ export default function ourStory() {
                 />
             </Head>
             <PageHeader title="Plan Your Visit" />
-            <div className="p-8 md:p-16">
-                <div className="max-w-8xl">
+            <div className="py-8 md:py-16 container">
+                <div className="max-w-7xl">
                     <div className="flex flex-col lg:flex-row">
                         <div className="lg:w-1/4">
                             <h2 className="mb-8">

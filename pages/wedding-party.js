@@ -16,7 +16,7 @@ export default function ourStory() {
                     content="https://www.millenwedding.com/og-image.jpg"
                 />
             </Head>
-            <PageHeader title="The Wedding Party" />
+            <PageHeader title="Wedding Party" />
             <div className="p-8 md:p-16">
                 <div className="max-w-2xl">
                     <p>Lorem ipsum dolor sit amet</p>

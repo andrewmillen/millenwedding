@@ -18,8 +18,8 @@ export default function ourStory() {
                 />
             </Head>
             <PageHeader title="Our Story" />
-            <div className="p-8 md:p-16">
-                <div className="max-w-5xl flex flex-col">
+            <div className="py-8 md:py-16 container">
+                <div className="max-w-6xl flex flex-col">
                     <ChatBubble text="Like a lot of couples these days, our story starts with a mutual swipe right. I saw a girl at a football game with a beautiful smile, and could tell that she was genuine, kind, and fun-loving." />
 
                     <ChatBubble

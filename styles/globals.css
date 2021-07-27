@@ -61,6 +61,26 @@
 }
 
 @layer utilities {
+
+    .container {
+        @apply max-w-8xl mx-auto px-6 sm:px-8 md:px-12 lg:px-16
+    }
+
+    /* @media screen and (max-height: 475px) {
+        .mobile-nav ul {
+            @apply flex-row space-y-0 flex-wrap p-8;
+        }
+        .mobile-nav ul li {
+            @apply mr-4;
+        }
+        .mobile-nav ul li a {
+            @apply text-2xl;
+        }
+        .rsvp {
+            @apply hidden;
+        }
+    } */
+
     .cursor {
         position: fixed;
         left: 0;

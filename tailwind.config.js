@@ -22,6 +22,9 @@ module.exports = {
             fontSize: {
                 '10xl': '10rem',
             },
+            maxWidth: {
+                '8xl': '90rem',
+            },
             colors: {
                 wine: '#66191D',
                 wineLight: '#D76369',
