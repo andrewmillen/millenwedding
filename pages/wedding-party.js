@@ -1,11 +1,22 @@
+import Slider from 'react-slick'
 import Head from 'next/head'
 import PageHeader from '@/components/PageHeader'
+import { weddingParty } from '@/lib/weddingParty.json'
 
-export default function ourStory() {
+export default function theWeddingParty() {
+    var settings = {
+        arrows: true,
+        infinite: true,
+        autoplay: false,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    }
+
     return (
         <>
             <Head>
-                <title>Plan Your Visit | Andrew and Regina's Wedding</title>
+                <title>The Wedding Party | Andrew and Regina's Wedding</title>
                 <meta
                     name="description"
                     content="We're getting married on October 23, 2021 at Pinecrest Retreat in
@@ -18,9 +29,13 @@ export default function ourStory() {
             </Head>
             <PageHeader title="Wedding Party" />
             <div className="p-8 md:p-16">
-                <div className="max-w-2xl">
-                    <p>Lorem ipsum dolor sit amet</p>
-                </div>
+                <ul>
+                    <Slider {...settings}>
+                        {weddingParty.map((person, index) => (
+                            <li key={person.name}>{person.name}</li>
+                        ))}
+                    </Slider>
+                </ul>
             </div>
         </>
     )

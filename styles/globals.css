@@ -102,15 +102,6 @@
         z-index: 12000;
       }
 
-    /* .rsvp {
-        transition: all 500ms;
-    } */
-
-    /* .rsvp.triggered {
-        opacity: 1;
-        transform: scale(1.1);
-    } */
-
     .blur-in {
         filter: blur(20px);
         transform: scale(1.5);
@@ -186,4 +177,65 @@
             transform: scale(1);
         }
     }
+
+    /* RSVP Button CSS from Codepen */
+
+    /* .u-fit {
+        width: 100%;
+        height: 100%;
+    }
+
+    .u-relative {
+        position: relative;
+    }
+
+    .u-absolute {
+        position: absolute;
+
+        &.u-pos-tl {
+            top: 0;
+            left: 0;
+        }
+    }
+
+    .u-flex {
+        display: flex;
+    }
+
+    .u-flex.u-center-xy {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .c-magnetic-btn {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+
+    .o-circle {
+        display: inline-block;
+        background-color: #FFF;
+        border: 2px solid #FFF;
+        border-radius: 50%;
+        z-index: -1;
+        opacity: 0.2;
+        transition: opacity 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        will-change: opacity;
+    }
+
+    .t-btn-label {
+        display: inline-block;
+        user-select: none;
+        font-family: 'Karla', sans-serif;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 1;
+        color: rgba(black, 0.5);
+        font-size: 13px;
+    }
+
+    .is-hover .o-circle {
+        opacity: 0.4;
+    } */
 }

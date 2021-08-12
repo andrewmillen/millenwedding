@@ -1,5 +1,7 @@
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 import '../styles/globals.css'
-import RSVPButton from '@/components/RSVPButton'
+import RSVPButtonClass from '@/components/RSVPButtonClass'
 import CustomCursor from '@/components/CustomCursor'
 
 function MyApp({ Component, pageProps }) {
@@ -7,7 +9,14 @@ function MyApp({ Component, pageProps }) {
         <>
             <Component {...pageProps} />
             <div className="hidden md:block">
-                <RSVPButton />
+                <RSVPButtonClass
+                    threshold={40}
+                    ratio={5}
+                    max={100}
+                    scale={1.2}
+                    ease={0.14}
+                    label={'R.S.V.P.'}
+                />
             </div>
             <div className="block md:hidden">
                 <a

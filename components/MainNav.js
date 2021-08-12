@@ -101,34 +101,30 @@ export default function MainNav() {
                     <nav className="mt-24 md:mt-0">
                         <ul className="flex flex-col space-y-4">
                             {navLinks.map(item => (
-                                <>
+                                <li key={item.path}>
                                     {item.external ? (
-                                        <li key={item.path}>
+                                        <a
+                                            target="_blank"
+                                            href={item.path}
+                                            className="font-serifitalic py-1 sm:py-3 2xl:py-5 px-2 inline-block text-3xl md:text-5xl lg:text-6xl transform hover:translate-x-1 transition ease-in-out"
+                                        >
+                                            {item.title}
+                                        </a>
+                                    ) : (
+                                        <Link href={item.path} passHref>
                                             <a
-                                                target="_blank"
-                                                href={item.path}
-                                                className="font-serifitalic py-1 sm:py-3 2xl:py-5 px-2 inline-block text-3xl md:text-5xl lg:text-6xl transform hover:translate-x-1 transition ease-in-out"
+                                                className={`text-white font-serifitalic py-1 sm:py-3 2xl:py-5 px-2 inline-block text-3xl md:text-5xl lg:text-6xl transform hover:translate-x-1 transition ease-in-out ${
+                                                    router.pathname ===
+                                                    item.path
+                                                        ? 'text-marigold pointer-events-none'
+                                                        : 'text-white hover:text-wineLight'
+                                                }`}
                                             >
                                                 {item.title}
                                             </a>
-                                        </li>
-                                    ) : (
-                                        <li key={item.path}>
-                                            <Link href={item.path} passHref>
-                                                <a
-                                                    className={`text-white font-serifitalic py-1 sm:py-3 2xl:py-5 px-2 inline-block text-3xl md:text-5xl lg:text-6xl transform hover:translate-x-1 transition ease-in-out ${
-                                                        router.pathname ===
-                                                        item.path
-                                                            ? 'text-marigold pointer-events-none'
-                                                            : 'text-white hover:text-wineLight'
-                                                    }`}
-                                                >
-                                                    {item.title}
-                                                </a>
-                                            </Link>
-                                        </li>
+                                        </Link>
                                     )}
-                                </>
+                                </li>
                             ))}
                         </ul>
                     </nav>
