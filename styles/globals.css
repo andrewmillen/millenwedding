@@ -27,6 +27,14 @@
 }
 
 @font-face {
+    font-family: 'sweet_sans_proregular';
+    src: url('/fonts/sweetsansproregular.woff2') format('woff2'),
+         url('/fonts/sweetsansproregular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'sweet_sans_prolight';
     src: url('/fonts/sweetsansprolight.woff2') format('woff2'),
          url('/fonts/sweetsansprolight.woff') format('woff');

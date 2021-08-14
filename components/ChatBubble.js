@@ -8,7 +8,7 @@ export default function ChatBubble({ alternate, text, image, width, height }) {
                 <div className="flex w-full justify-end mb-4 border pl-20 lg:pl-0">
                     <div className="flex items-end justify-end space-x-8 w-full">
                         <div className="flex items-end">
-                            <div className="max-w-md lg:max-w-2xl text-sm md:text-base flex-1 p-4 bg-gradient-to-r from-tinderRed to-tinderOrange text-white rounded-xl">
+                            <div className="font-sansregular max-w-md lg:max-w-xl text-sm md:text-base flex-1 p-4 lg:p-6 lg:px-8 bg-wineLight text-white rounded-xl">
                                 {text}
                                 {image && (
                                     <>
@@ -29,7 +29,7 @@ export default function ChatBubble({ alternate, text, image, width, height }) {
                             >
                                 <path
                                     d="M0 21H21C11.9125 16.4562 4.54377 9.08755 0 0V21Z"
-                                    fill="#F97A69"
+                                    fill="#D5646B"
                                 />
                             </svg>
                         </div>
@@ -65,7 +65,7 @@ export default function ChatBubble({ alternate, text, image, width, height }) {
                                     fill="#D4CBC8"
                                 />
                             </svg>
-                            <div className="max-w-md lg:max-w-2xl text-sm md:text-base flex-1 p-4 bg-linenDark rounded-xl">
+                            <div className="max-w-md font-sansregular lg:max-w-xl text-sm md:text-base lg:text-lg flex-1 p-4 lg:py-6 lg:px-8 bg-linenDark rounded-xl">
                                 {text}
                                 {image && (
                                     <>

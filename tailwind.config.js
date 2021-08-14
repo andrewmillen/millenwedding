@@ -4,6 +4,7 @@ module.exports = {
     theme: {
         fontFamily: {
             sans: ['sweet_sans_promedium', 'system-ui'],
+            sansregular: ['sweet_sans_proregular', 'system-ui'],
             sanslight: ['sweet_sans_prolight', 'system-ui'],
             serif: ['ttramillas-extralightregular', 'Georgia'],
             serifitalic: ['ttramillas-extralightitalicRg', 'Georgia'],

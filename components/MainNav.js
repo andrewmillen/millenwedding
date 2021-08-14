@@ -9,13 +9,6 @@ export default function MainNav() {
     const menuWrapper = useRef(null)
     const router = useRouter()
 
-    function isActivePage(item) {
-        if (router.pathname.indexOf(item.path) > 0) {
-            return true
-        }
-        return false
-    }
-
     // Close the menu if esc key is pressed
     const closeMenu = useCallback(e => {
         if (e.keyCode === 27) {
@@ -97,7 +90,7 @@ export default function MainNav() {
             </button>
 
             {isOpen ? (
-                <div className="fixed flex flex-col justify-start md:justify-end max-h-screen top-0 left-0 bottom-0 right-0 transition duration-150 ease-out transform bg-wine z-40">
+                <div className="fixed flex flex-col justify-start md:justify-end max-h-screen top-0 left-0 bottom-0 right-0 bg-wine z-40">
                     <div className="container">
                         <nav className="mt-24 md:mt-0">
                             <ul className="flex flex-col space-y-4 mb-8">
@@ -113,7 +106,12 @@ export default function MainNav() {
                                             </a>
                                         ) : (
                                             <Link href={item.path} passHref>
-                                                <a className="text-white hover:text-wineLight font-serifitalic py-1 sm:py-2 lg:px-2 inline-block text-3xl md:text-5xl lg:text-6xl leading-none transform hover:translate-x-1 transition ease-in-out">
+                                                <a
+                                                    onClick={() =>
+                                                        setIsOpen(false)
+                                                    }
+                                                    className="text-white hover:text-wineLight font-serifitalic py-1 sm:py-2 lg:px-2 inline-block text-3xl md:text-5xl lg:text-6xl leading-none transform hover:translate-x-1 transition ease-in-out"
+                                                >
                                                     {item.title}
                                                 </a>
                                             </Link>
@@ -124,6 +122,7 @@ export default function MainNav() {
                                     <a
                                         target="_blank"
                                         href="http://www.google.com"
+                                        onClick={() => setIsOpen(false)}
                                         className="md:hidden text-white hover:text-wineLight font-serifitalic py-1 sm:py-2 lg:px-2 inline-block text-3xl md:text-5xl lg:text-6xl leading-none transform hover:translate-x-1 transition ease-in-out"
                                     >
                                         RSVP
