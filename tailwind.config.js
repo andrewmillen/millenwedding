@@ -13,12 +13,14 @@ module.exports = {
             tighter: '-.05em',
             tight: '-.025em',
             normal: '0',
-            wide: '.025em',
-            wider: '.05em',
-            widest: '.1em',
-            widest: '.5em',
+            wide: '.25em',
+            wider: '0.5em',
+            widest: '1em',
         },
         extend: {
+            height: {
+                600: '600px',
+            },
             fontSize: {
                 '10xl': '10rem',
             },

@@ -79,7 +79,7 @@ export default function MainNav() {
         <div ref={menuWrapper}>
             <button
                 ref={toggleButton}
-                className="mainNavButton uppercase tracking-widest flex space-x-4 items-center hover:opacity-75 z-50 absolute top-12 left-12"
+                className="mainNavButton uppercase tracking-wider flex space-x-4 items-center hover:opacity-75 z-50 absolute top-12 left-12"
                 onClick={() => setIsOpen(!isOpen)}
             >
                 {!isOpen ? (

@@ -10,12 +10,12 @@ function MyApp({ Component, pageProps }) {
             <Component {...pageProps} />
             <div className="hidden md:block">
                 <RSVPButtonClass
-                    threshold={40}
+                    threshold={20}
                     ratio={5}
-                    max={100}
+                    max={40}
                     scale={1.2}
                     ease={0.14}
-                    label={'R.S.V.P.'}
+                    label={'RSVP'}
                 />
             </div>
             <div className="block md:hidden">

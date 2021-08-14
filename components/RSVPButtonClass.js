@@ -77,21 +77,27 @@ class RSVPButtonClass extends Component {
             this.getEase(key, transform, ease)
         )
 
-        this.setState({ ease: this.fixValues(ease) })
+        this.setState({
+            ease: this.fixValues(ease),
+        })
 
         requestAnimationFrame(this.run)
     }
 
     getTransforms() {
-        const { isMagnetic, mouse, window } = this.state
+        const { isMagnetic, mouse, window, bounds } = this.state
         const { max, scale } = this.props
 
         return {
             x: isMagnetic
-                ? ((mouse.x - window.width / 2) / window.width) * max
+                ? ((mouse.x - (bounds.left + bounds.width / 2)) /
+                      bounds.width) *
+                  max
                 : 0,
             y: isMagnetic
-                ? ((mouse.y - window.height / 2) / window.height) * max
+                ? ((mouse.y - (bounds.top + bounds.height / 2)) /
+                      bounds.height) *
+                  max
                 : 0,
             scale: isMagnetic ? scale : 1,
         }
@@ -121,14 +127,14 @@ class RSVPButtonClass extends Component {
         }
 
         return (
-            <div class="absolute top-0 right-0">
+            <div class="absolute top-6 right-6">
                 <button
                     style={style.btn}
-                    className={`rounded-full relative w-64 h-64 ${isHoverClass}`}
+                    className={`rounded-full relative w-48 h-48 ${isHoverClass}`}
                     ref={btn => (this.btn = btn)}
                 >
                     <span
-                        className="font-bold text-white text-2xl flex justify-center items-center"
+                        className="font-bold text-white font-serif ml-4 text-xl text-center tracking-widest flex justify-center items-center"
                         style={style.label}
                     >
                         {this.props.label}

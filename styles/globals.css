@@ -178,6 +178,58 @@
         }
     }
 
+    /* Slick slider */
+
+    .slick-arrow {
+        @apply w-12 h-12 inline-block;
+    }
+
+    .slick-prev,
+    .slick-prev:active {
+        @apply absolute top-0 left-0;
+        background-size: 50%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMzciIHZpZXdCb3g9IjAgMCAyMCAzNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNy45OTc5IDAuNTg3ODkxTDE5LjQxMjIgMi4wMDIxTDIuOTE0MjEgMTguNTAwMUwxOS40MTIyIDM0Ljk5OEwxNy45OTc5IDM2LjQxMjJMMC4wODU3ODQ5IDE4LjUwMDFMMTcuOTk3OSAwLjU4Nzg5MVoiIGZpbGw9IiM2NjE5MUQiLz4KPC9zdmc+Cg==")
+    }
+
+    .slick-next,
+    .slick-next:active {
+        @apply absolute top-0 left-16;
+        background-size: 50%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMzciIHZpZXdCb3g9IjAgMCAyMCAzNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xLjUwMjA1IDM2LjQxMjFMMC4wODc4NDEyIDM0Ljk5NzlMMTYuNTg1OCAxOC40OTk5TDAuMDg3ODQ0IDIuMDAyTDEuNTAyMDYgMC41ODc3ODJMMTkuNDE0MiAxOC40OTk5TDEuNTAyMDUgMzYuNDEyMVoiIGZpbGw9IiM2NjE5MUQiLz4KPC9zdmc+Cg==")
+    }
+
+    .slick-prev::before,
+    .slick-next::before {
+        display: none;
+    }
+
+    .slick-prev:hover,
+    .slick-prev:focus {
+        opacity: 0.6;
+        background-size: 50%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMzciIHZpZXdCb3g9IjAgMCAyMCAzNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNy45OTc5IDAuNTg3ODkxTDE5LjQxMjIgMi4wMDIxTDIuOTE0MjEgMTguNTAwMUwxOS40MTIyIDM0Ljk5OEwxNy45OTc5IDM2LjQxMjJMMC4wODU3ODQ5IDE4LjUwMDFMMTcuOTk3OSAwLjU4Nzg5MVoiIGZpbGw9IiM2NjE5MUQiLz4KPC9zdmc+Cg==")
+    }
+
+    .slick-next:hover,
+    .slick-next:focus {
+        opacity: 0.6;
+        background-size: 50%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMzciIHZpZXdCb3g9IjAgMCAyMCAzNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xLjUwMjA1IDM2LjQxMjFMMC4wODc4NDEyIDM0Ljk5NzlMMTYuNTg1OCAxOC40OTk5TDAuMDg3ODQ0IDIuMDAyTDEuNTAyMDYgMC41ODc3ODJMMTkuNDE0MiAxOC40OTk5TDEuNTAyMDUgMzYuNDEyMVoiIGZpbGw9IiM2NjE5MUQiLz4KPC9zdmc+Cg==")
+    }
+
+
     /* RSVP Button CSS from Codepen */
 
     /* .u-fit {
