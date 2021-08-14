@@ -2,31 +2,25 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import '../styles/globals.css'
 import RSVPButtonClass from '@/components/RSVPButtonClass'
-import CustomCursor from '@/components/CustomCursor'
+import MainNav from '@/components/MainNav'
 
 function MyApp({ Component, pageProps }) {
     return (
         <>
+            <div className="absolute container left-0 right-0 flex justify-between pt-6 lg:pt-12 z-50">
+                <MainNav />
+                <div className="hidden md:block relative z-50">
+                    <RSVPButtonClass
+                        threshold={20}
+                        ratio={2}
+                        max={40}
+                        scale={1.2}
+                        ease={0.14}
+                        label={'RSVP'}
+                    />
+                </div>
+            </div>
             <Component {...pageProps} />
-            <div className="hidden md:block">
-                <RSVPButtonClass
-                    threshold={20}
-                    ratio={5}
-                    max={40}
-                    scale={1.2}
-                    ease={0.14}
-                    label={'RSVP'}
-                />
-            </div>
-            <div className="block md:hidden">
-                <a
-                    href="https://weddings.papier.com/regina-andrew/rsvp-4836?fbclid=IwAR0Uh-7XV8WxlROOtvCN-UUyTM9XjV4xwpCJyKO43i29Mvupg-mC-ztMwGs"
-                    className="text-marigold uppercase lg:text-lg tracking-widest absolute top-9 right-9 z-40"
-                >
-                    RSVP
-                </a>
-            </div>
-            {/* <CustomCursor /> */}
         </>
     )
 }

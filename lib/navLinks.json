@@ -16,13 +16,13 @@
           "external": false
         },
         {
-          "path": "/plan-your-visit",
-          "title": "Plan Your Visit",
+          "path": "/the-day-of",
+          "title": "The Day Of",
           "external": false
         },
         {
-          "path": "/the-day-of",
-          "title": "The Day Of",
+          "path": "/plan-your-visit",
+          "title": "Plan Your Visit",
           "external": false
         },
         {

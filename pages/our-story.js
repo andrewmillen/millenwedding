@@ -34,7 +34,12 @@ export default function ourStory() {
                         text="And I made conversation on subjects that are literally on Things Not to Talk About on a First Date lists. I'm kinda surprise he stuck around to be honest, let alone ask me on a second date."
                     />
 
-                    <ChatBubble text="Soon after, she took me to Jerry’s sno-cones against my will. But she was right, it was delicious." />
+                    <ChatBubble
+                        image="jerrys"
+                        width={400}
+                        height={400}
+                        text="Soon after, she took me to Jerry’s sno-cones against my will. But she was right, it was delicious."
+                    />
 
                     <ChatBubble
                         alternate={true}
@@ -45,6 +50,9 @@ export default function ourStory() {
 
                     <ChatBubble
                         alternate={true}
+                        image="dc"
+                        width={720}
+                        height={405}
                         text="A few days after I got back, we got into the car and drove to the Women's March in D.C., our first trip together."
                     />
 

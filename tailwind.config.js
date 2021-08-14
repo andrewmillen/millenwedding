@@ -25,7 +25,7 @@ module.exports = {
                 '10xl': '10rem',
             },
             maxWidth: {
-                '8xl': '90rem',
+                '8xl': '96rem',
             },
             colors: {
                 wine: '#66191D',

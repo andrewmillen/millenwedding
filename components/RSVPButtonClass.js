@@ -127,21 +127,19 @@ class RSVPButtonClass extends Component {
         }
 
         return (
-            <div class="absolute top-6 right-6">
-                <button
-                    style={style.btn}
-                    className={`rounded-full relative w-48 h-48 ${isHoverClass}`}
-                    ref={btn => (this.btn = btn)}
+            <button
+                style={style.btn}
+                className={`rounded-full relative w-56 h-56 ${isHoverClass}`}
+                ref={btn => (this.btn = btn)}
+            >
+                <span
+                    className="font-bold text-white font-serif ml-4 text-xl text-center tracking-widest flex justify-center items-center"
+                    style={style.label}
                 >
-                    <span
-                        className="font-bold text-white font-serif ml-4 text-xl text-center tracking-widest flex justify-center items-center"
-                        style={style.label}
-                    >
-                        {this.props.label}
-                    </span>
-                    <span className="inline-block border-2 border-marigold border-solid rounded-full w-full h-full absolute top-0 left-0"></span>
-                </button>
-            </div>
+                    {this.props.label}
+                </span>
+                <span className="inline-block border-2 border-marigold border-solid rounded-full w-full h-full absolute top-0 left-0"></span>
+            </button>
         )
     }
 }

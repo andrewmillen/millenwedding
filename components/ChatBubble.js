@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
-export default function ChatBubble({ alternate, text }) {
+export default function ChatBubble({ alternate, text, image, width, height }) {
+    console.log({ image })
     return (
         <>
             {alternate ? (
@@ -9,6 +10,16 @@ export default function ChatBubble({ alternate, text }) {
                         <div className="flex items-end">
                             <div className="max-w-md lg:max-w-2xl text-sm md:text-base flex-1 p-4 bg-gradient-to-r from-tinderRed to-tinderOrange text-white rounded-xl">
                                 {text}
+                                {image && (
+                                    <>
+                                        <div className="h-4"></div>
+                                        <Image
+                                            src={`/${image}.jpg`}
+                                            height={height}
+                                            width={width}
+                                        />
+                                    </>
+                                )}
                             </div>
                             <svg
                                 width="21"
@@ -56,6 +67,16 @@ export default function ChatBubble({ alternate, text }) {
                             </svg>
                             <div className="max-w-md lg:max-w-2xl text-sm md:text-base flex-1 p-4 bg-linenDark rounded-xl">
                                 {text}
+                                {image && (
+                                    <>
+                                        <div className="h-4"></div>
+                                        <Image
+                                            src={`/${image}.jpg`}
+                                            height={height}
+                                            width={width}
+                                        />
+                                    </>
+                                )}
                             </div>
                         </div>
                     </div>
