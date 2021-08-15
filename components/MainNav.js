@@ -92,7 +92,7 @@ export default function MainNav() {
             {isOpen ? (
                 <div className="fixed flex flex-col justify-start md:justify-end max-h-screen top-0 left-0 bottom-0 right-0 bg-wine z-40">
                     <div className="container">
-                        <nav className="mt-24 md:mt-0">
+                        <nav className="mt-24 md:mt-0 mainNav">
                             <ul className="flex flex-col space-y-4 mb-8">
                                 {navLinks.map(item => (
                                     <li key={item.path}>

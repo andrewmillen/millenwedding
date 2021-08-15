@@ -26,7 +26,12 @@ export default function ourStory() {
                             Page Not Found
                         </span>
                     </h1>
-                    <Image src="/404.jpg" height="400" width="400"></Image>
+                    <Image
+                        src="/404.jpg"
+                        height="400"
+                        width="400"
+                        alt="Regina wearing a ridiculous hat."
+                    ></Image>
                 </div>
             </div>
         </>
