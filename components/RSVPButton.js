@@ -2,7 +2,7 @@ import { Component } from 'react'
 import _ from 'lodash'
 const { mapValues, toNumber } = _
 
-class RSVPButtonClass extends Component {
+class RSVPButton extends Component {
     state = {
         window: typeof window !== 'undefined' && {
             width: window?.innerWidth,
@@ -127,10 +127,12 @@ class RSVPButtonClass extends Component {
         }
 
         return (
-            <button
+            <a
                 style={style.btn}
-                className={`rounded-full relative w-56 h-56 ${isHoverClass}`}
+                className={`rounded-full relative w-56 h-56 flex justify-center items-center ${isHoverClass}`}
                 ref={btn => (this.btn = btn)}
+                href="https://weddings.papier.com/regina-andrew/rsvp-7203"
+                target="_blank"
             >
                 <span
                     className="font-bold text-white font-serif ml-4 text-xl text-center tracking-widest flex justify-center items-center"
@@ -139,9 +141,9 @@ class RSVPButtonClass extends Component {
                     {this.props.label}
                 </span>
                 <span className="inline-block border-2 border-marigold border-solid rounded-full w-full h-full absolute top-0 left-0"></span>
-            </button>
+            </a>
         )
     }
 }
 
-export default RSVPButtonClass
+export default RSVPButton

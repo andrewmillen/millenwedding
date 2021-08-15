@@ -46,11 +46,6 @@
     body {
         @apply bg-linen;
     }
-
-    /* body, body a {
-        cursor: none;
-    } */
-
     h1 {
         @apply font-serif text-6xl lg:text-8xl;
     }
@@ -72,48 +67,6 @@
 
     .container {
         @apply max-w-8xl mx-auto px-6 sm:px-8 md:px-12 lg:px-16
-    }
-
-    /* @media screen and (max-height: 475px) {
-        .mobile-nav ul {
-            @apply flex-row space-y-0 flex-wrap p-8;
-        }
-        .mobile-nav ul li {
-            @apply mr-4;
-        }
-        .mobile-nav ul li a {
-            @apply text-2xl;
-        }
-        .rsvp {
-            @apply hidden;
-        }
-    } */
-
-    .cursor {
-        position: fixed;
-        left: 0;
-        top: 0;
-        pointer-events: none;
-      }
-      .cursor--small {
-        width: 10px;
-        height: 10px;
-        left: -5px;
-        top: -5px;
-        border-radius: 50%;
-        z-index: 11000;
-        background: rgba(226, 163, 97, .75)
-      }
-      .cursor--canvas {
-        width: 100vw;
-        height: 100vh;
-        z-index: 12000;
-      }
-
-    .blur-in {
-        filter: blur(20px);
-        transform: scale(1.5);
-        animation: blurIn 1.5s ease-out 0.5s forwards;
     }
 
     .chatbubble {
@@ -175,41 +128,35 @@
         border-bottom-left-radius: 100px;
     }
 
-    @keyframes blurIn {
-        0% {
-            filter: blur(20px);
-            transform: scale(1.5);
-        }
-        100% {
-            filter: blur(0);
-            transform: scale(1);
-        }
-    }
-
     /* Slick slider */
 
     .slick-arrow {
-        @apply w-12 h-12 inline-block;
+        @apply w-12 h-12 absolute top-8 lg:top-6 inline-block z-50;
     }
 
     .slick-prev,
     .slick-prev:active {
-        @apply absolute top-0 left-0;
-        background-size: 50%;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-color: transparent;
-        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMzciIHZpZXdCb3g9IjAgMCAyMCAzNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNy45OTc5IDAuNTg3ODkxTDE5LjQxMjIgMi4wMDIxTDIuOTE0MjEgMTguNTAwMUwxOS40MTIyIDM0Ljk5OEwxNy45OTc5IDM2LjQxMjJMMC4wODU3ODQ5IDE4LjUwMDFMMTcuOTk3OSAwLjU4Nzg5MVoiIGZpbGw9IiM2NjE5MUQiLz4KPC9zdmc+Cg==")
+        @apply left-auto right-12 lg:right-auto lg:-left-3;
+        background-size: 50% !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+        background-color: transparent !important;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMzciIHZpZXdCb3g9IjAgMCAyMCAzNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNy45OTc5IDAuNTg3ODkxTDE5LjQxMjIgMi4wMDIxTDIuOTE0MjEgMTguNTAwMUwxOS40MTIyIDM0Ljk5OEwxNy45OTc5IDM2LjQxMjJMMC4wODU3ODQ5IDE4LjUwMDFMMTcuOTk3OSAwLjU4Nzg5MVoiIGZpbGw9IiM2NjE5MUQiLz4KPC9zdmc+Cg==") !important;
     }
 
     .slick-next,
     .slick-next:active {
-        @apply absolute top-0 left-16;
-        background-size: 50%;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-color: transparent;
-        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMzciIHZpZXdCb3g9IjAgMCAyMCAzNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xLjUwMjA1IDM2LjQxMjFMMC4wODc4NDEyIDM0Ljk5NzlMMTYuNTg1OCAxOC40OTk5TDAuMDg3ODQ0IDIuMDAyTDEuNTAyMDYgMC41ODc3ODJMMTkuNDE0MiAxOC40OTk5TDEuNTAyMDUgMzYuNDEyMVoiIGZpbGw9IiM2NjE5MUQiLz4KPC9zdmc+Cg==")
+        @apply left-auto -right-4 lg:right-auto lg:left-16;
+        background-size: 50% !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+        background-color: transparent !important;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMzciIHZpZXdCb3g9IjAgMCAyMCAzNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xLjUwMjA1IDM2LjQxMjFMMC4wODc4NDEyIDM0Ljk5NzlMMTYuNTg1OCAxOC40OTk5TDAuMDg3ODQ0IDIuMDAyTDEuNTAyMDYgMC41ODc3ODJMMTkuNDE0MiAxOC40OTk5TDEuNTAyMDUgMzYuNDEyMVoiIGZpbGw9IiM2NjE5MUQiLz4KPC9zdmc+Cg==") !important;
+    }
+
+    .slick-prev:focus,
+    .slick-next:focus {
+        @apply ring-2 ring-offset-2;
     }
 
     .slick-prev::before,
@@ -218,84 +165,8 @@
     }
 
     .slick-prev:hover,
-    .slick-prev:focus {
+    .slick-next:hover {
         opacity: 0.6;
-        background-size: 50%;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-color: transparent;
-        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMzciIHZpZXdCb3g9IjAgMCAyMCAzNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNy45OTc5IDAuNTg3ODkxTDE5LjQxMjIgMi4wMDIxTDIuOTE0MjEgMTguNTAwMUwxOS40MTIyIDM0Ljk5OEwxNy45OTc5IDM2LjQxMjJMMC4wODU3ODQ5IDE4LjUwMDFMMTcuOTk3OSAwLjU4Nzg5MVoiIGZpbGw9IiM2NjE5MUQiLz4KPC9zdmc+Cg==")
     }
 
-    .slick-next:hover,
-    .slick-next:focus {
-        opacity: 0.6;
-        background-size: 50%;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-color: transparent;
-        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMzciIHZpZXdCb3g9IjAgMCAyMCAzNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xLjUwMjA1IDM2LjQxMjFMMC4wODc4NDEyIDM0Ljk5NzlMMTYuNTg1OCAxOC40OTk5TDAuMDg3ODQ0IDIuMDAyTDEuNTAyMDYgMC41ODc3ODJMMTkuNDE0MiAxOC40OTk5TDEuNTAyMDUgMzYuNDEyMVoiIGZpbGw9IiM2NjE5MUQiLz4KPC9zdmc+Cg==")
-    }
-
-
-    /* RSVP Button CSS from Codepen */
-
-    /* .u-fit {
-        width: 100%;
-        height: 100%;
-    }
-
-    .u-relative {
-        position: relative;
-    }
-
-    .u-absolute {
-        position: absolute;
-
-        &.u-pos-tl {
-            top: 0;
-            left: 0;
-        }
-    }
-
-    .u-flex {
-        display: flex;
-    }
-
-    .u-flex.u-center-xy {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .c-magnetic-btn {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-    }
-
-    .o-circle {
-        display: inline-block;
-        background-color: #FFF;
-        border: 2px solid #FFF;
-        border-radius: 50%;
-        z-index: -1;
-        opacity: 0.2;
-        transition: opacity 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-        will-change: opacity;
-    }
-
-    .t-btn-label {
-        display: inline-block;
-        user-select: none;
-        font-family: 'Karla', sans-serif;
-        font-weight: 700;
-        letter-spacing: 1px;
-        line-height: 1;
-        color: rgba(black, 0.5);
-        font-size: 13px;
-    }
-
-    .is-hover .o-circle {
-        opacity: 0.4;
-    } */
 }

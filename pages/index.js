@@ -20,7 +20,7 @@ export default function Home() {
             <div className="w-screen h-screen flex flex-col md:flex-row bg-wine">
                 <div className="w-screen h-1/2 flex-shrink-0 md:h-screen md:w-1/2 flex flex-col justify-end items-end py-8 lg:py-16">
                     <div className="flex flex-col-reverse md:flex-col text-white w-full max-w-3xl pl-6 sm:pl-8 md:pl-12 lg:pl-16">
-                        <p className="text-wineLight tracking-wider lg:text-xl xl:text-2xl">
+                        <p className="text-wineLight tracking-wide lg:text-xl xl:text-2xl">
                             10.23.2021
                         </p>
                         <h1 className="font-serifitalic text-7xl lg:text-8xl xl:text-9xl 2xl:text-10xl mb-2 lg:mt-4 lg:-ml-3">
@@ -30,7 +30,12 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="w-screen h-1/2 flex-shrink-0 md:h-screen md:w-1/2 relative bg-gray-700">
-                    <Image src="/hero.jpg" layout="fill" objectFit="cover" />
+                    <Image
+                        src="/hero.jpg"
+                        layout="fill"
+                        objectFit="cover"
+                        alt="Andrew making Regina laugh on a walk through downtown Memphis."
+                    />
                 </div>
             </div>
         </>

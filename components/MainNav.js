@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { navLinks } from '@/lib/navLinks.json'
+import { navLinks } from '@/json/navLinks.json'
 
 export default function MainNav() {
     const [isOpen, setIsOpen] = useState(false)
@@ -121,8 +121,7 @@ export default function MainNav() {
                                 <li>
                                     <a
                                         target="_blank"
-                                        href="http://www.google.com"
-                                        onClick={() => setIsOpen(false)}
+                                        href="https://weddings.papier.com/regina-andrew/rsvp-7203"
                                         className="md:hidden text-white hover:text-wineLight font-serifitalic py-1 sm:py-2 lg:px-2 inline-block text-3xl md:text-5xl lg:text-6xl leading-none transform hover:translate-x-1 transition ease-in-out"
                                     >
                                         RSVP

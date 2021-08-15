@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import PageHeader from '@/components/PageHeader'
 
 export default function theDayOf() {
@@ -17,36 +18,54 @@ export default function theDayOf() {
                 />
             </Head>
             <PageHeader title="The Day Of" />
-            <div className="py-8 md:py-16">
-                <div className="container">
-                    <p className="mb-4 lg:text-xl max-w-6xl">
-                        Schedule:{' '}
-                        <span className="font-sanslight">
-                            Ceremony begins at 4:00 p.m. Reception to follow.
-                        </span>
-                    </p>
-                    <p className="mb-4 lg:text-xl max-w-6xl">
-                        Dress:{' '}
-                        <span className="font-sanslight">
-                            Cocktail attire. (We recommend comfortable shoes for
-                            the woodsy area in which the chapel is located.)
-                        </span>
-                    </p>
-                    <p className="mb-4 lg:text-xl max-w-6xl">
-                        Address:{' '}
-                        <span className="font-sanslight">
-                            21430 TN-57, Moscow, TN 38057
-                        </span>
-                    </p>
-                    <p className="mb-4 lg:text-xl max-w-6xl">
-                        Directions:{' '}
-                        <span className="font-sanslight">
-                            Moscow is located about 40 miles east of Memphis via
-                            Highway 57. The entrance to the camp is marked by a
-                            large green sign. There will be signs posted leading
-                            to the chapel.
-                        </span>
-                    </p>
+            <div className="container">
+                <div className="flex flex-col lg:flex-row lg:space-x-16 py-8 md:py-16">
+                    <div className="w-1/2 flex-shrink-0">
+                        <p className="mb-4 lg:text-xl max-w-6xl">
+                            Date:{' '}
+                            <span className="font-sanslight">
+                                October 23, 2021
+                            </span>
+                        </p>
+                        <p className="mb-4 lg:text-xl max-w-6xl">
+                            Schedule:{' '}
+                            <span className="font-sanslight">
+                                Ceremony begins at 4:00 p.m. Reception to
+                                follow.
+                            </span>
+                        </p>
+                        <p className="mb-4 lg:text-xl max-w-6xl">
+                            Dress:{' '}
+                            <span className="font-sanslight">
+                                Cocktail attire. (We recommend comfortable shoes
+                                for the woodsy area in which the chapel is
+                                located.)
+                            </span>
+                        </p>
+                        <p className="mb-4 lg:text-xl max-w-6xl">
+                            Address:{' '}
+                            <span className="font-sanslight">
+                                21430 TN-57, Moscow, TN 38057
+                            </span>
+                        </p>
+                        <p className="mb-4 lg:text-xl max-w-6xl">
+                            Directions:{' '}
+                            <span className="font-sanslight">
+                                Moscow is located about 40 miles east of Memphis
+                                via Highway 57. The entrance to the camp is
+                                marked by a large green sign. There will be
+                                signs posted leading to the chapel.
+                            </span>
+                        </p>
+                    </div>
+                    <div className="w-1/2">
+                        <Image
+                            src="/chapel.jpg"
+                            width={700}
+                            height={500}
+                            alt="A picturesque chapel in the woods."
+                        />
+                    </div>
                 </div>
             </div>
         </>

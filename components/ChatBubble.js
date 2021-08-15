@@ -1,6 +1,13 @@
 import Image from 'next/image'
 
-export default function ChatBubble({ alternate, text, image, width, height }) {
+export default function ChatBubble({
+    alternate,
+    text,
+    image,
+    width,
+    height,
+    alt,
+}) {
     console.log({ image })
     return (
         <>
@@ -17,6 +24,7 @@ export default function ChatBubble({ alternate, text, image, width, height }) {
                                             src={`/${image}.jpg`}
                                             height={height}
                                             width={width}
+                                            alt={alt}
                                         />
                                     </>
                                 )}
@@ -74,6 +82,7 @@ export default function ChatBubble({ alternate, text, image, width, height }) {
                                             src={`/${image}.jpg`}
                                             height={height}
                                             width={width}
+                                            alt={alt}
                                         />
                                     </>
                                 )}

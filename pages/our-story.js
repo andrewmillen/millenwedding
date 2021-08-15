@@ -48,6 +48,7 @@ export default function ourStory() {
                                     src="/chat-hero-andrew.jpg"
                                     layout="fill"
                                     objectFit="cover"
+                                    alt="A headshot of Andrew."
                                 />
                             </div>
                             <div className="rounded-full border-4 border-solid relative overflow-hidden w-36 h-36 border-wineLight">
@@ -55,6 +56,7 @@ export default function ourStory() {
                                     src="/chat-hero-gina.jpg"
                                     layout="fill"
                                     objectFit="cover"
+                                    alt="A headshot of Regina."
                                 />
                             </div>
                         </div>
@@ -78,6 +80,7 @@ export default function ourStory() {
                         image="jerrys"
                         width={400}
                         height={400}
+                        alt="Andrew and Regina smiling for a selfie."
                         text="Soon after, she took me to Jerry’s sno-cones against my will. But she was right, it was delicious."
                     />
 
@@ -93,6 +96,7 @@ export default function ourStory() {
                         image="dc"
                         width={720}
                         height={405}
+                        alt="Andrew, Regina, Jeff, Hillary, and Megan protesting at the Women's March in Washington, D.C."
                         text="A few days after I got back, we got into the car and drove to the Women's March in D.C., our first trip together."
                     />
 
@@ -126,6 +130,7 @@ export default function ourStory() {
                         image="engagement"
                         width={600}
                         height={620}
+                        alt="Andrew and Regina smiling after having just gotten engaged."
                         text="As we hunkered down during the pandemic, I realized it was time. We took a morning walk together through the botanic gardens, and in the Moongazing Pavillion, I asked her to marry me. 💍"
                     />
 
@@ -134,6 +139,7 @@ export default function ourStory() {
                         image="engagement2"
                         width={800}
                         height={533}
+                        alt="Andrew and Regina smiling and holding a heart-shaped cookie up to the camera, with the Mississippi river in the background."
                         text="And obviously I said yes. So here we are, 5 years in. There have been uncertainties in the world around us but I've always been certain about us. We are so excited to continue our journey together and that you'll be here to witness that next big step."
                     />
                 </div>

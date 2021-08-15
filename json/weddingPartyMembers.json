@@ -3,41 +3,81 @@
       {
         "name": "Parker",
         "title": "Best Man",
+        "image": {
+          "width": "600",
+          "height": "800",
+          "alt": "Parker and Andrew wearing fly suits."
+        },
         "bio": "When we were in ninth grade, Parker came to my house with a CD containing two seasons of Samurai Champloo, some music, and a ripped copy of Photoshop Elements. It's not an exaggeration to say that I wouldn't be a web designer today if not for the fire sparked by that act of pirated generosity, which is just one of the ways my friendship with Parker has influenced me over the years. Parker is that rare breed of friend who unlocks new passions in those around him, and who sees potential in others that he wants to help them reach. We've been friends since middle school, but we grew closest over the last ten years, navigating our mid-twenties together over nightly games of FIFA and ventures into podcasting, online dating, and making music. I cherish our friendship and wouldn't be the man I am today without him."
       },
       {
         "name": "Austin",
         "title": "Groomsman",
+        "image": {
+          "width": "600",
+          "height": "588",
+          "alt": "In a bar, Austin making a serious face while Andrew looks off at the ceiling."
+        },
         "bio": "Austin and I also go back to the MUS days, where we spent untold hours playing video games, running set crew for theater productions, and making trouble in the senior lounge. Our friendship has continued since he returned to Memphis after college, for which I'm incredibly grateful, because I don't have any other friends quite like Austin. Austin will roast you, without pity, from a place of love. He'll send you videos from the weird side of YouTube that make you question his browsing habits. He'll tell you a joke with a 15-minute setup and no punchline. I know any hang with Austin—and it may anything from a Sunday afternoon NFL watch party, to a night at Opera Memphis—will be amazing."
       },
       {
         "name": "Calvin",
         "title": "Groomsman",
+          "image": {
+          "width": "600",
+          "height": "800",
+          "alt": "Andrew with his arm around Calvin, who has an exasperated look on his face."
+          },
         "bio": "Calvin and I share a desk clump at the office—or at least we did, before Covid-19—and let me tell you what a gift it is to have someone you can swivel your chair towards and strike up a great conversation with, about anything. Cars, basketball, cooking, disc golf, software-as-a-service – you name it. Calvin and I often get mistaken for each other, probably because of our matching world-class physiques. Or maybe it's because we both have red beards. But the truth is, there's a lot of things about Calvin that I still aspire to. His relentless calm, the example he sets as a husband and dad, and the effort he puts into sharing the things he loves with others. Everyone needs a work friend like Calvin."
       },
       {
         "name": "Nathan",
         "title": "Groomsman",
+        "image": {
+          "width": "600",
+          "height": "800",
+          "alt": "Nathan and Andrew flashing peace signs."
+        },
         "bio": "One of the nerviest parts of dating someone new is meeting their friends. Luckily, Regina's friends are some of the coolest people I know. Case in point, Nathan played a solo on Pony with his brass band at his own wedding reception, which may be the coolest thing I've ever witnessed. I feel so lucky that Nathan (not to mention his better half, Rachel) will be in my life for a while, because he's truly one of the most talented, funny, and humble guys I've ever met. In fact, Nathan is the kind of friend I wish I'd met earlier in life—someone who sets a standard of high character and kind heartedness, even if he is clumsy with knives."
       },
       {
         "name": "Hillary",
         "title": "Bridesmaid",
+        "image": {
+          "width": "600",
+          "height": "763",
+          "alt": "Hillary and Regina in the stands at a Memphis football game."
+          },
         "bio": "Hillary and I met in the summer of 2009 during Mighty Sound of the South band camp.  That year we got involved with restarting a music fraternity on campus, Sigma Alpha Iota. We've been roommates, sisters, and BFFs.  She makes sure things get done.  For example, I had a tonsillectomy in 2010 and was home-bound.  Hillary drove from her dorm room all the way to Arlington, the furthest suburb from the city limits, just so that we could finish an SAI report.  Oh, it was snowing at the time.  At night.  In rural Tennessee.  Where we don't salt the roads. She was there throughout my “if you can’t handle me at my worst” stage of life and is fiercely loyal.  She taught me assertiveness and actually putting things into action.  She has had a huge impact on my life, to the point that I probably wouldn’t have even met the following ladies."
       },
       {
         "name": "Megan",
         "title": "Bridesmaid",
+        "image": {
+          "width": "600",
+          "height": "800",
+          "alt": "Megan and Regina smiling for a selfie"
+        },
         "bio": "Megan and I met through SAI in the Fall of 2011.  A few months later, she moved in with me and Hil. We only lived together for a year but that was enough time to establish a long standing friendship.  Case in point, we once spent 34 hours driving, 1 night in Chicago and in St. Louis, 3 nights in Michigan, 2 hours on a ferry, and multiple hours in horse drawn cabs for Hillary and Jeff's wedding.  Surely only two good friends could survive that together.  It helps that Megan is really chill to travel with, especially in high stress situations like the Women's March in D.C...and our fraternity Spring Break trip to Gulf Shores.  Megan is the definition of introvert.  So, anytime she tells me a small little nugget about herself, I treasure it, so much so that I don't even want to share those details about her here.  I feel incredibly privileged that she has let me into her life."
       },
       {
         "name": "Rachel",
         "title": "Bridesmaid",
+        "image": {
+          "width": "600",
+          "height": "800",
+          "alt": "A young Rachel and Regina in college standing on a statue"
+        },
         "bio": "Hillary and Rachel were MSS Tigerettes together.  After Jeff, Hillary, and Megan moved away in 2015 and all of Rachel's friends started getting married and having babies, we decided to start hanging out more. We actually met in 2011 but were mostly acquaintances.  However, one of my favorite memories of her is from that year, prancing through New Orleans after spending time on Bourbon Street.  For legal reasons (mostly kidding), I can't go into much more detail about that night.  Not to brag, but I definitely played a role in getting her and her husband together.  She was the first to give the stamp of approval to Andrew, which I'm sure he's eternally grateful for.  And now we work 2 doors down from each other.  Rachel is a true Type A.  She works hard at everything she does, including friendships.  Who would've thought that becoming friends by process of elimination would turn out so well?"
       },
       {
         "name": "Jeff",
         "title": "Reader & Usher",
+        "image": {
+          "width": "600",
+          "height": "800",
+          "alt": "Jeff and Regina at a Memphis Grizzlies basketball game, their faces partially hidden behind growl towels."
+        },
         "bio": "Jeff is really the first falling domino in all of these stories.  We met the summer of 2008 in MSS. My first impression was 'oh, he's someone I need to avoid' due to his attitude with a couple others over Jeff wearing a long sleeve shirt the first day of camp.  But the next day, he sat next to me and said, 'Hi, my names Jeff.  Sorry I was an expletive yesterday.'  He then taught me all of the ways to cheat in the music we played so I didn't have to memorize it.  We hung out a ton that year and the next summer he introduced me to Hillary, his high school sweetheart.  The rest is history from there. He's great for late-night-sitting-outside-on-cheap-patio-furniture-existential talks.  I'm glad he sat next to me that day in band camp.  My social life would have been different, and probably more boring, otherwise."
       }
     ]

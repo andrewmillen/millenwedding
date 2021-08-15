@@ -1,7 +1,7 @@
 import Slider from 'react-slick'
 import Head from 'next/head'
 import PageHeader from '@/components/PageHeader'
-import { weddingPartyMembers } from '@/lib/weddingPartyMembers.json'
+import { weddingPartyMembers } from '@/json/weddingPartyMembers.json'
 import Image from 'next/image'
 
 export default function weddingParty() {
@@ -20,33 +20,35 @@ export default function weddingParty() {
                 />
             </Head>
             <PageHeader title="Wedding Party" />
-            <div className="p-8 md:p-16">
+            <div className="container py-8 md:py-16">
                 <ul>
                     <Slider
                         infinite={true}
                         slidesToShow={1}
                         slidesToScroll={1}
                         fade={true}
+                        speed={150}
                     >
-                        {weddingPartyMembers.map((person, index) => (
-                            <li key={person.name}>
-                                <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-24">
-                                    <div className="w-1/2 relative">
-                                        <h2 className="text-gray-900 text-2xl lg:text-3xl font-sans">
-                                            {person.name}
+                        {weddingPartyMembers.map(partyMember => (
+                            <li key={partyMember.name}>
+                                <div className="flex flex-col lg:flex-row space-y-10 lg:space-y-0 lg:space-x-24">
+                                    <div className="lg:w-1/2 relative">
+                                        <h2 className="lg:mt-24">
+                                            {partyMember.name}
                                         </h2>
-                                        <p className="pt-3 pb-6 text-lg lg:text-xl font-sanslight">
-                                            {person.title}
+                                        <p className="pt-3 pb-6 text-lg lg:text-xl font-sans">
+                                            {partyMember.title}
                                         </p>
                                         <p className="font-sanslight">
-                                            {person.bio}
+                                            {partyMember.bio}
                                         </p>
                                     </div>
-                                    <div className="w-1/2 relative h-600">
+                                    <div className="lg:w-1/2 relative lg:h-600">
                                         <Image
-                                            src={`/${person.name}.jpg`}
-                                            height={800}
-                                            width={600}
+                                            src={`/${partyMember.name}.jpg`}
+                                            height={partyMember.image.height}
+                                            width={partyMember.image.width}
+                                            alt={partyMember.image.alt}
                                         />
                                     </div>
                                 </div>
