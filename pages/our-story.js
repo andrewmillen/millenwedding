@@ -77,7 +77,7 @@ export default function ourStory() {
                     />
 
                     <ChatBubble
-                        image="jerrys"
+                        image="/jerrys.jpg"
                         width={400}
                         height={400}
                         alt="Andrew and Regina smiling for a selfie."
@@ -93,7 +93,7 @@ export default function ourStory() {
 
                     <ChatBubble
                         alternate={true}
-                        image="dc"
+                        image="/dc.jpg"
                         width={720}
                         height={405}
                         alt="Andrew, Regina, Jeff, Hillary, and Megan protesting at the Women's March in Washington, D.C."
@@ -108,7 +108,7 @@ export default function ourStory() {
                     />
 
                     <ChatBubble
-                        image="football"
+                        image="/football.jpg"
                         width={800}
                         height={600}
                         text="I started falling in love with her. She broadened my horizons, but also made me feel comfortable being myself."
@@ -127,7 +127,7 @@ export default function ourStory() {
                     />
 
                     <ChatBubble
-                        image="engagement"
+                        image="/engagement.jpg"
                         width={600}
                         height={620}
                         alt="Andrew and Regina smiling after having just gotten engaged."
@@ -136,7 +136,7 @@ export default function ourStory() {
 
                     <ChatBubble
                         alternate={true}
-                        image="engagement2"
+                        image="/engagement2.jpg"
                         width={800}
                         height={533}
                         alt="Andrew and Regina smiling and holding a heart-shaped cookie up to the camera, with the Mississippi river in the background."

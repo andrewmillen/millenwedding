@@ -21,7 +21,7 @@ export default function ChatBubble({
                                     <>
                                         <div className="h-4"></div>
                                         <Image
-                                            src={`/${image}.jpg`}
+                                            src={image}
                                             height={height}
                                             width={width}
                                             alt={alt}
@@ -79,7 +79,7 @@ export default function ChatBubble({
                                     <>
                                         <div className="h-4"></div>
                                         <Image
-                                            src={`/${image}.jpg`}
+                                            src={image}
                                             height={height}
                                             width={width}
                                             alt={alt}
