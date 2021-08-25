@@ -8,7 +8,6 @@ export default function ChatBubble({
     height,
     alt,
 }) {
-    console.log({ image })
     return (
         <>
             {alternate ? (

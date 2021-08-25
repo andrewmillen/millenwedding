@@ -77,7 +77,7 @@ export default function ourStory() {
                     />
 
                     <ChatBubble
-                        image="/jerrys.jpg"
+                        image="/jerrys2.jpg"
                         width={400}
                         height={400}
                         alt="Andrew and Regina smiling for a selfie."
