@@ -1,5 +1,5 @@
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
+import '@/styles/slick.css'
+import '@/styles/slick-theme.css'
 import '@/styles/globals.css'
 import RSVPButton from '@/components/RSVPButton'
 import MainNav from '@/components/MainNav'

@@ -33,7 +33,7 @@ export default function weddingParty() {
                             <li key={partyMember.name}>
                                 <div className="flex flex-col lg:flex-row space-y-10 lg:space-y-0 lg:space-x-24">
                                     <div className="lg:w-1/2 relative">
-                                        <h2 className="lg:mt-24">
+                                        <h2 className="lg:mt-32">
                                             {partyMember.name}
                                         </h2>
                                         <p className="pt-3 pb-6 text-lg lg:text-xl font-sans">
