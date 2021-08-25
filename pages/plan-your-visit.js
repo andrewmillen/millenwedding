@@ -93,7 +93,7 @@ export default function ourStory() {
                             />
                             <ThingToDo
                                 title="Overton Park"
-                                description="Walking trails through old growth forests, the famous Memphis Zoom, and the Brooks art museum."
+                                description="Walking trails through old growth forests, the famous Memphis Zoo, and the Brooks Museum of Art."
                             />
                         </div>
                     </div>

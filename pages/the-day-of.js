@@ -51,10 +51,10 @@ export default function theDayOf() {
                         <p className="mb-4 lg:text-xl max-w-6xl">
                             Directions:{' '}
                             <span className="font-sanslight">
-                                Moscow is located about 40 miles east of Memphis
-                                via Highway 57. The entrance to the camp is
-                                marked by a large green sign. There will be
-                                signs posted leading to the chapel.
+                                Pincrest Reatreat is located about 40 miles east
+                                of Memphis via Highway 57. The entrance to the
+                                camp is marked by a large green sign. There will
+                                be signs posted leading to the chapel.
                             </span>
                         </p>
                     </div>

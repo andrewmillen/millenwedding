@@ -43,7 +43,7 @@ export default function weddingParty() {
                                             {partyMember.bio}
                                         </p>
                                     </div>
-                                    <div className="lg:w-1/2 relative lg:h-600">
+                                    <div className="lg:w-1/2 relative">
                                         <Image
                                             src={`/${partyMember.name}.jpg`}
                                             height={partyMember.image.height}
