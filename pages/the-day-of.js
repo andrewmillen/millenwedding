@@ -57,6 +57,16 @@ export default function theDayOf() {
                                 be signs posted leading to the chapel.
                             </span>
                         </p>
+                        <p className="mb-4 lg:text-xl max-w-6xl">
+                            COVID-19 Protocols:{' '}
+                            <span className="font-sanslight">
+                                Due to an increase in cases in Shelby County, we
+                                ask that anyone attending our wedding be fully
+                                vaccinated against COVID-19, unless ineligible
+                                due to age. If this is not an option, we ask
+                                that you celebrate with us in spirit.
+                            </span>
+                        </p>
                     </div>
                     <div className="w-1/2">
                         <Image
