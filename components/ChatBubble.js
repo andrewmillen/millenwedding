@@ -11,8 +11,8 @@ export default function ChatBubble({
     return (
         <>
             {alternate ? (
-                <div className="flex w-full justify-end mb-4 border pl-20 lg:pl-0">
-                    <div className="flex items-end justify-end space-x-8 w-full">
+                <div className="flex w-full justify-end mb-4 border pl-8 lg:pl-0">
+                    <div className="flex items-end justify-end space-x-2 lg:space-x-8 w-full">
                         <div className="flex items-end">
                             <div className="font-sansregular max-w-md lg:max-w-xl text-sm md:text-base flex-1 p-4 lg:p-6 lg:px-8 bg-wineLight text-white rounded-xl">
                                 {text}
@@ -51,8 +51,8 @@ export default function ChatBubble({
                     </div>
                 </div>
             ) : (
-                <div className="flex w-full justify-start mb-4 border pr-20 lg:pr-0">
-                    <div className="flex items-end space-x-8 w-full">
+                <div className="flex w-full justify-start mb-4 border pr-8 lg:pr-0">
+                    <div className="flex items-end space-x-2 lg:space-x-8 w-full">
                         <div className="w-12">
                             <Image
                                 src="/chat-andrew.png"

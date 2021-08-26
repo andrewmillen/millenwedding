@@ -20,7 +20,7 @@ export default function theDayOf() {
             <PageHeader title="The Day Of" />
             <div className="container">
                 <div className="flex flex-col lg:flex-row lg:space-x-16 py-8 md:py-16">
-                    <div className="w-1/2 flex-shrink-0">
+                    <div className="lg:w-1/2 lg:flex-shrink-0">
                         <p className="mb-4 lg:text-xl max-w-6xl">
                             Date:{' '}
                             <span className="font-sanslight">
@@ -68,7 +68,7 @@ export default function theDayOf() {
                             </span>
                         </p>
                     </div>
-                    <div className="w-1/2">
+                    <div className="lg:w-1/2">
                         <Image
                             src="/chapel.jpg"
                             width={700}
