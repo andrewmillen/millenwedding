@@ -11,7 +11,7 @@ export default function ourStory() {
                 <meta
                     name="description"
                     content="We're getting married on October 23, 2021 at Pinecrest Retreat in
-            Mowcow, TN."
+            Moscow, TN."
                 />
                 <meta
                     property="og:image"
